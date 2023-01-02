@@ -16,7 +16,7 @@ def home():
 def upload_page():
     return render_template("upload.html")
 
-@app.route("/result", methods=['POST'])
+@app.route("/api/result", methods=['POST'])
 def upload():
     if request.method != 'POST':
         redirect('/upload')
