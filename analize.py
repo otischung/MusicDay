@@ -40,16 +40,17 @@ def five(filepath:str):
         
     appear.sort()
     # 5 index
-    average = librosa.midi_to_note(appear[(int)(len(appear)/2)])
-    average_high = librosa.midi_to_note(appear[(int)(3*len(appear)/4)])
-    average_low = librosa.midi_to_note(appear[(int)(len(appear)/4)])
-    low = librosa.midi_to_note(appear[(int)(len(appear)/100)])
-    high = librosa.midi_to_note(appear[(int)(98*len(appear)/100)])
-    # print("average", average)
-    # print("average high", average_high)
-    # print("average low", average_low)
-    # print("low", low)
-    # print("high", high)
+    # average = librosa.midi_to_note(appear[(int)(len(appear)/2)])
+    # average_high = librosa.midi_to_note(appear[(int)(3*len(appear)/4)])
+    # average_low = librosa.midi_to_note(appear[(int)(len(appear)/4)])
+    # low = librosa.midi_to_note(appear[(int)(len(appear)/100)])
+    # high = librosa.midi_to_note(appear[(int)(98*len(appear)/100)])
+    
+    average = appear[(int)(len(appear)/2)]
+    average_high = appear[(int)(3*len(appear)/4)]
+    average_low = appear[(int)(len(appear)/4)]
+    low = appear[(int)(len(appear)/100)]
+    high = appear[(int)(98*len(appear)/100)]
     
     return [low, average_low, average, average_high, high]
 
