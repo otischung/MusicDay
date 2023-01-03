@@ -1,0 +1,7 @@
+eyeD3
+numpy
+librosa
+pandas
+pysqlite3
+spleeter
+tqdm
