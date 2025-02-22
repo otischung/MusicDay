@@ -15,6 +15,8 @@ Contributor:
    ./linux_install_requirements.sh
    ```
 
+   Note that this will also create `tmp` directory in this repository.
+
    
 
 2. Install Python requirements
